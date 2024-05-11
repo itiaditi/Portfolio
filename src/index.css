@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap");
+body {
+  margin: 0;
+  font-family: 'JetBrains Mono', monospace !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  z-index: -1;
+  background-attachment: fixed;
+  background-image: var(--image-gradient), url(./Assets/home-banner.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35)); */
+}
