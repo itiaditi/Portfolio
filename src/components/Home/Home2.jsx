@@ -1,17 +1,17 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-import gif from "../../Assets/about-gif.gif";
+// import gif from "../../Assets/about-gif.gif";
 
 
 function Home2(props) {
   return (
-    <Container fluid className="home-about-section" id="about" ref={props.link}>
+    <Container className="home-about-section" id="about" ref={props.link}>
       <Container id="about">
         <Row className="flex-column-reverse flex-lg-row">
           <Col
-            md={5}
-            sm={12}
+            xs={12} // Full width on mobile and tablet
+            lg={5} // Half width on larger screens
             className="home-about-description "
             id="home-about-description"
           >
@@ -25,8 +25,8 @@ function Home2(props) {
             />
           </Col>
           <Col
-            md={7}
-            sm={12}
+            xs={12} // Full width on mobile and tablet
+            lg={7} // Half width on larger screens
             className="home-about-description pl-5"
             id="home-about-description2"
           >
@@ -34,10 +34,6 @@ function Home2(props) {
               About<span className="purple"> Me </span>
             </h1>
             <p className="home-about-body" style={{ textAlign: "justify" }}>
-              {/* I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️ */}
-              {/* <br />
-              <br /> */}
               An Aspiring Full Stack Web Developer with a passion for
               <i>
                 <b className="purple"> developing web applications.</b>
@@ -60,11 +56,6 @@ function Home2(props) {
               as a developer.
             </p>
           </Col>
-          {/* <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt>
-          </Col> */}
         </Row>
       </Container>
     </Container>

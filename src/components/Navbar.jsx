@@ -17,6 +17,9 @@ function NavBar(props) {
       updateNavbar(false);
     }
   }
+  const closeMenu = () => {
+    updateExpanded(false); 
+  };
 
   window.addEventListener("scroll", scrollHandler);
 
@@ -24,7 +27,7 @@ function NavBar(props) {
     <Navbar
       expanded={expand}
       fixed="top"
-      expand="md"
+      expand="xl"
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
@@ -54,6 +57,7 @@ function NavBar(props) {
                 onClick={() => {
                   // eslint-disable-next-line react/prop-types
                   props.home.current.scrollIntoView({ behavior: "smooth" });
+                  closeMenu();
                 }}
               >
                 Home
@@ -65,6 +69,7 @@ function NavBar(props) {
                 onClick={() => {
                   // eslint-disable-next-line react/prop-types
                   props.about.current.scrollIntoView({ behavior: "smooth" });
+                  closeMenu();
                 }}
               >
                 About
@@ -76,6 +81,7 @@ function NavBar(props) {
                 onClick={() => {
                   // eslint-disable-next-line react/prop-types
                   props.skills.current.scrollIntoView({ behavior: "smooth" });
+                  closeMenu();
                 }}
               >
                 Skills
@@ -89,6 +95,7 @@ function NavBar(props) {
                   props.projects.current.scrollIntoView({
                     behavior: "smooth",
                   });
+                  closeMenu();
                 }}
               >
                 Projects
@@ -101,6 +108,7 @@ function NavBar(props) {
                   props.contact.current.scrollIntoView({
                     behavior: "smooth",
                   });
+                  closeMenu();
                 }}
               >
                 Contact

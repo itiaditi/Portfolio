@@ -171,7 +171,7 @@ useEffect(()=>emailjs.init("V2-98SY8q_1anY9WW"),[])
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/itiaditi"
+                  href="https://twitter.com/itiaditi008"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
