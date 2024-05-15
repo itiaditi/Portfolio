@@ -43,7 +43,7 @@ function Home(props) {
                 
                 <a href={pdf} target="_blank">
                   <button onClick={()=>{
-                    window.open("https://drive.google.com/file/d/1rzs_-Fv2ihj1NNg-OQmjfe09uWessHnt/view?usp=drive_link")
+                    window.open("https://drive.google.com/file/d/1rzs_-Fv2ihj1NNg-OQmjfe09uWessHnt/view")
                   }} className="btn btn-lg btn-outline-info mt-5 px-5">
                     RESUME
                   </button>
