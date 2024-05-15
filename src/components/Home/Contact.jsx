@@ -1,5 +1,6 @@
 /** @format */
 
+// eslint-disable-next-line no-unused-vars
 import React, { useState, useRef, useEffect } from "react";
 import { Container, Row, Col, Button, Alert, Form } from "react-bootstrap";
 // import myImg from "../../Assets/img-logo.png";
@@ -48,6 +49,7 @@ useEffect(()=>emailjs.init("V2-98SY8q_1anY9WW"),[])
   };
 
   return (
+    // eslint-disable-next-line react/prop-types
     <Container fluid className="home-about-section" id="about" ref={props.link}>
       <Container id="about">
         <Row>

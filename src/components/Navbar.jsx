@@ -1,5 +1,6 @@
 /** @format */
 
+// eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
@@ -35,7 +36,7 @@ function NavBar(props) {
           {/* <img src={logo} className="img-fluid logo" alt="brand" /> */}
           <h2 className="purple" style={{ lineHeight: "0" }}>
             <i>
-              Aditi[<span style={{ color: "white" }}>"Dev"</span>]
+              Aditi[<span style={{ color: "white" }}>&quot;Dev&quot;</span>]
             </i>
           </h2>
         </Navbar.Brand>

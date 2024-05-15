@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -6,6 +7,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 function Home2(props) {
   return (
+    // eslint-disable-next-line react/prop-types
     <Container className="home-about-section" id="about" ref={props.link}>
       <Container id="about">
         <Row className="flex-column-reverse flex-lg-row">
